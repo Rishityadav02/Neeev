@@ -1,0 +1,167 @@
+/* Footer Base Styling */
+.footer {
+    width: 100%;
+    background-color: #292F36;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Footer Container */
+.f-info {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Social Media & Logo Section */
+.f-social-medias {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.f-logo-text {
+    display: flex;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+}
+
+.f-logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.f-logo img {
+    width: 100%;
+}
+
+.f-text p {
+    margin: 0;
+    color: aliceblue;
+}
+
+.f-about-text p {
+    margin: 10px 0 15px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Social Media Icons */
+.f-smedia ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.f-smedia ul li a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.f-smedia ul li a:hover {
+    color: #B0E0E6;
+}
+
+/* Pages & Services Sections */
+.f-pages, .f-services, .f-contact {
+    flex: 1;
+    min-width: 180px;
+}
+
+.f-pages p, .f-services p, .f-contact p:first-child {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #B0E0E6;
+    margin-bottom: 10px;
+}
+
+.f-pages ul, .f-services ul {
+    padding: 0;
+    list-style: none;
+}
+
+.f-pages ul li, .f-services ul li {
+    margin-bottom: 10px;
+}
+
+.f-pages ul li a, .f-services ul li a {
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.f-pages ul li a:hover, .f-services ul li a:hover {
+    color: #B0E0E6;
+}
+
+/* Contact Section */
+.f-contact p {
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.f-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.f-contact a:hover {
+    color: #B0E0E6;
+}
+
+/* Copyright Section */
+.f-copyright {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .f-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f-pages, .f-services, .f-contact {
+        flex-basis: 100%;
+        max-width: 300px;
+    }
+
+    .f-smedia ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .f-info {
+        width: 90%;
+    }
+
+    .f-pages, .f-services, .f-contact {
+        text-align: center;
+    }
+
+    .f-copyright {
+        font-size: 12px;
+    }
+}
